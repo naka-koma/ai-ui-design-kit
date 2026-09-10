@@ -1,0 +1,23 @@
+# SETUPで実際の取得値へ置き換える。未解決値のまま導入完了にしない。
+schema_version: 1
+
+source:
+  repository: https://github.com/naka-koma/ai-ui-design-kit
+  version: REPLACE_WITH_VERIFIED_TAG_OR_COMMIT
+  revision: REPLACE_WITH_FULL_40_CHARACTER_COMMIT_SHA
+
+managed:
+  - path: .claude/skills/ui-design
+    source: skill/ui-design
+  - path: .claude/skills/ui-design/LICENSE
+    source: LICENSE
+
+# 利用しない指示ファイルはこの一覧から除く。
+merge:
+  - path: AGENTS.md
+    source: integrations/AGENTS.md.snippet.md
+  - path: CLAUDE.md
+    source: integrations/CLAUDE.md.snippet.md
+
+project_owned:
+  - docs/design
