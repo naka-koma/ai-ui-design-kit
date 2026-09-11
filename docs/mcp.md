@@ -1,6 +1,6 @@
 # Future read-only MCP
 
-これは将来設計であり、v4にサーバー実装・デプロイは含まれない。GitHubとSETUP/SYNCだけで利用できることを維持する。
+これは将来設計であり、v5にサーバー実装・デプロイは含まれない。GitHubとSETUP/SYNCだけで利用できることを維持する。
 
 ```text
 GitHub: 正本、履歴、リリース

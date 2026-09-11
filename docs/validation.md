@@ -1,13 +1,13 @@
-# v4 acceptance review
+# v4 acceptance review / v5 extension
 
 ## 検証の範囲
 
-添付のv4受入条件をこの実装に対応させた記録。配布物は文書・Skill・テンプレートであり、自動インストーラーやMCPサーバーではない。シナリオ検証は手順のウォークスルーで、実製品への導入実績やUIのWCAG適合を意味しない。
+添付のv4受入条件をこの実装に対応させた記録。v5ではVisual Reference Analysisとアンチパターン学習を追加した。配布物は文書・Skill・テンプレートであり、自動インストーラーやMCPサーバーではない。シナリオ検証は手順のウォークスルーで、実製品への導入実績やUIのWCAG適合を意味しない。
 
 | 受入区分 | 対応と確認結果 |
 | --- | --- |
 | Repository architecture | READMEを概要に限定し、SETUP・SYNC・CHANGELOGを独立配置。既存MITを維持。個人のローカルパスや非公開製品情報を含めない |
-| Skill | skill/ui-design/SKILL.mdと9つのreferencesを配置。WCAG 2.2 AA、独立した読みやすさ・階層レビュー、signature保持、既定表示と設定の関係を記述 |
+| Skill | skill/ui-design/SKILL.mdと10個のreferencesを配置。WCAG 2.2 AA、独立した読みやすさ・階層レビュー、signature保持、既定表示と設定の関係、Visual Reference Analysisを記述 |
 | Subject Swap | 専用referenceをSkill、product-signature、visual-reviewから参照。交換後の特徴、PASS/NEUTRAL/FAIL、汎用画面の許容、過剰装飾を避ける手順を定義 |
 | Setup | BootstrapとDiscoveryを分離。既存文書の保持、再設計禁止、manifest作成と検証を規定 |
 | Sync | manifestから取得元を解決。managed置換・指示統合・project-owned不変を規定。成功後だけ版を更新。Design Auditと区別 |
@@ -31,7 +31,7 @@ manifestの旧revisionと更新先を取得し、managedのローカル編集を
 ### 追加の境界確認
 
 - manifestなし・未知schema: 推測で上書きしない。
-- 未公開タグ: 存在しないv0.4.0を導入済みと記録しない。
+- 未公開タグ: 存在しないv0.5.0を導入済みと記録しない。
 - ローカル編集・未知の追加ファイル: 黙って破棄しない。
 - managedとproject-ownedの重複・外部パス: 適用前に拒否。
 - 部分失敗: 今回分だけ復旧し、導入済み版を進めない。

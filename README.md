@@ -27,6 +27,7 @@ https://github.com/naka-koma/ai-ui-design-kit の SETUP.md を読み、
 
 - **Design Bootstrap / Discovery**: 新規UIでは必要な方針だけ決め、既存UIでは証拠から設計意図を抽出します。
 - **Product Signature**: 密度、構成、操作、質感など、プロダクトらしさを保持します。
+- **Visual Reference Analysis**: ギャラリーやPinterestの参考を、表層の模倣ではなく、説明できる設計判断へ翻訳します。
 - **Subject Swap**: 名前やコピーを交換しても残る特徴を確認。汎用的な設定画面などはNEUTRALとして認めます。
 - **品質**: WCAG 2.2 AAをWebの既定基準にし、読みやすさと視覚的な階層も別途レビューします。
 
@@ -43,4 +44,4 @@ Skillはコピーして使います。submoduleや中央リポジトリへの実
 
 ## 状態とライセンス
 
-v4仕様の初期実装（予定バージョン `v0.4.0`）。公開済みタグの存在を前提にしません。[CHANGELOG](CHANGELOG.md)を参照してください。既存の[MIT License](LICENSE)を継承します。将来の[読み取り専用MCP](docs/mcp.md)は設計のみで、現在の導入には不要です。
+v5仕様の初期実装（予定バージョン `v0.5.0`）。公開済みタグの存在を前提にしません。[CHANGELOG](CHANGELOG.md)を参照してください。既存の[MIT License](LICENSE)を継承します。将来の[読み取り専用MCP](docs/mcp.md)は設計のみで、現在の導入には不要です。

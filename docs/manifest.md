@@ -6,7 +6,7 @@
 | --- | --- |
 | schema_version | 整数。現在は1。未知の版は適用前に移行仕様を確認 |
 | source.repository | 実際に取得した公開GitHubリポジトリのHTTPS URL。forkも可 |
-| source.version | 存在を検証したタグ（例 `v0.4.0`）か `commit:<40桁SHA>` |
+| source.version | 存在を検証したタグ（例 `v0.5.0`）か `commit:<40桁SHA>` |
 | source.revision | 必須の40桁コミットSHA。versionがタグならその解決先 |
 | managed | `path`（導入先相対パス）と `source`（中央相対パス）の配列 |
 | merge | `path`（対象指示ファイル）と `source`（中央snippet）の配列 |
@@ -26,6 +26,6 @@ mergeはファイル全体を中央所有にしない。`<!-- ui-design-kit:begi
 
 ## バージョンと移行
 
-`v4` はKitの設計世代、`v0.4.0` は予定する配布タグ、`schema_version: 1` はmanifest形式。これらを混同しない。タグが未公開なら `v0.4.0` を導入済みと記録せず、固定コミットを使う。
+`v5` はKitの設計世代、`v0.5.0` は予定する配布タグ、`schema_version: 1` はmanifest形式。これらを混同しない。タグが未公開なら `v0.5.0` を導入済みと記録せず、固定コミットを使う。
 
 manifestは導入先を表し、中央リポジトリ自体へテンプレートをそのままコピーしない。更新後の検証が成功した時だけversion/revisionを書き換える。未知の追加フィールドは保持するが、未知のschemaや所有操作を推測で実行しない。
