@@ -42,3 +42,11 @@ manifestの旧revisionと更新先を取得し、managedのローカル編集を
 Skill Creatorの `quick_validate.py` は `Skill is valid!` で成功。ローカルMarkdownリンク44件、manifestのYAML構文、配布元の参照、managedの12個の宛先の重複なし、snippet境界、行末空白、機械固有のローカルパスがないことを検査し、すべて成功した。
 
 これらは文書どおりに未知のエージェントが振る舞うことまで保証するものではない。
+
+## Issue #1 — 汎用デザイン原則
+
+読む順番、全体の一貫性、素材の役割、統一感と均一化の区別、密度に合う整理、実物・実データ、文脈への適合、生成素材と構成設計の分離をdesign-principlesに整理した。Skill入口、Bootstrap / Discovery・壁打ちの確認項目、視覚階層とレビュー、principlesテンプレートから作業時に参照できる。
+
+特定のスタイルを既定化せず、最終判断を人間に残すこと、AIの初期案を確定事項にしないことを明記。「情報設計がAIらしい印象を弱める」は検証済みの効果とせず、仮説として扱う。Issue内の研究の再検証や、実製品での効果測定は実施していない。
+
+Skill Creatorの `quick_validate.py` をPythonのUTF-8モードで実行し成功。リポジトリ内のローカルMarkdownリンク46件の存在と `git diff --check` を確認し成功した。これは文書の形式・リンクの検証であり、UIの視覚品質を保証しない。

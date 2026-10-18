@@ -26,6 +26,7 @@ https://github.com/naka-koma/ai-ui-design-kit の SETUP.md を読み、
 ## 考え方
 
 - **Design Bootstrap / Discovery**: 新規UIでは必要な方針だけ決め、既存UIでは証拠から設計意図を抽出します。
+- **情報設計の判断基準**: 読む順番、素材の役割、全体の一貫性を目的・利用者・媒体から検討します。具体的なスタイルの最終判断はプロジェクトごとに人間が行います。
 - **Product Signature**: 密度、構成、操作、質感など、プロダクトらしさを保持します。
 - **Visual Reference Analysis**: ギャラリーやPinterestの参考を、表層の模倣ではなく、説明できる設計判断へ翻訳します。
 - **Subject Swap**: 名前やコピーを交換しても残る特徴を確認。汎用的な設定画面などはNEUTRALとして認めます。
