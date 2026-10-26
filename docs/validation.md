@@ -7,7 +7,7 @@
 | 受入区分 | 対応と確認結果 |
 | --- | --- |
 | Repository architecture | READMEを概要に限定し、SETUP・SYNC・CHANGELOGを独立配置。既存MITを維持。個人のローカルパスや非公開製品情報を含めない |
-| Skill | skill/ui-design/SKILL.mdと10個のreferencesを配置。WCAG 2.2 AA、独立した読みやすさ・階層レビュー、signature保持、既定表示と設定の関係、Visual Reference Analysisを記述 |
+| Skill | skill/ui-design/SKILL.mdと11個のreferencesを配置（UX considerationsを含む）。WCAG 2.2 AA、独立した読みやすさ・階層レビュー、signature保持、既定表示と設定の関係、Visual Reference Analysisを記述 |
 | Subject Swap | 専用referenceをSkill、product-signature、visual-reviewから参照。交換後の特徴、PASS/NEUTRAL/FAIL、汎用画面の許容、過剰装飾を避ける手順を定義 |
 | Setup | BootstrapとDiscoveryを分離。既存文書の保持、再設計禁止、manifest作成と検証を規定 |
 | Sync | manifestから取得元を解決。managed置換・指示統合・project-owned不変を規定。成功後だけ版を更新。Design Auditと区別 |
